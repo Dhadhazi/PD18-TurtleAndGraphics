@@ -4,7 +4,7 @@ import random
 
 t.colormode(255)
 timmy_the_turtle = t.Turtle()
-timmy_the_turtle.pensize(10)
+timmy_the_turtle.pensize(1)
 timmy_the_turtle.speed(0)
 
 def random_color():
@@ -13,13 +13,13 @@ def random_color():
     b = random.randint(0,255)
     return (r,g,b)
 
-def random_walk():
-    timmy_the_turtle.right(90*random.randint(0,4))
+def draw_circle():
     timmy_the_turtle.pencolor(random_color())
-    timmy_the_turtle.forward(25)
+    timmy_the_turtle.circle(100)
 
-for i in range(150):
-    random_walk()
+for _ in range(90):
+    draw_circle()
+    timmy_the_turtle.right(4)
 
 screen = t.Screen()
 screen.exitonclick()
