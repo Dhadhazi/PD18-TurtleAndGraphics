@@ -1,4 +1,4 @@
-# 17th Day of Python - Turtle and Graphics
+# 18th Day of Python - Turtle and Graphics
 
 I mostly program these before watching the video, so some might not be self work.
 
